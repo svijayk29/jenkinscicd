@@ -1,6 +1,6 @@
 #!/bin/bash
  
-ssh app@APP.SERVER.IP.ADDRESS <<EOF
+ssh app@54.149.57.249 <<EOF
   cd ~/jenkinscicd
   git pull
   npm install --production
