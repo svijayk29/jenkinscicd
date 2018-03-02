@@ -1,0 +1,9 @@
+#!/bin/bash
+ 
+ssh app@APP.SERVER.IP.ADDRESS <<EOF
+  cd ~/jenkinscicd
+  git pull
+  npm install --production
+  forever restartall
+  exit
+EOF
